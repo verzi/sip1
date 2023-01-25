@@ -1,0 +1,101 @@
+[
+  {
+    "type": "get",
+    "url": "/colectivos/api/v1.0/service-alerts",
+    "title": "Service Alerts",
+    "version": "1.0.0",
+    "name": "IndexColectivos",
+    "group": "Colectivos",
+    "description": "<p>Retorna las alertas de servicio de colectivos.<br/></p>",
+    "parameter": {
+      "fields": {
+        "Query string": [
+          {
+            "group": "Query string",
+            "type": "String",
+            "optional": true,
+            "field": "sort",
+            "description": "<p>Permite ordenar por un campo (del primer nivel) de forma ascendente o descendente. Para ordenar de forma descendente se debe poner como prefijo del campo un -</p> <pre class=\"prettyprint\">?sort=id (orden ascendente por campo id) </code></pre> <pre class=\"prettyprint\">?sort=-id (orden descendente por campo id) </code></pre>"
+          },
+          {
+            "group": "Query string",
+            "type": "String",
+            "optional": true,
+            "field": "limit",
+            "description": "<p>Indica la cantidad máxima de elementos a retornar.</p> <pre class=\"prettyprint\">?limit=5 </code></pre>"
+          },
+          {
+            "group": "Query string",
+            "type": "String",
+            "optional": true,
+            "field": "offset",
+            "description": "<p>Indica desde que posición se entregarán los elementos.</p> <pre class=\"prettyprint\">?offset=10 </code></pre>"
+          },
+          {
+            "group": "Query string",
+            "type": "String",
+            "optional": true,
+            "field": "agency_id",
+            "description": "<p>ID de empresa.</p> <pre class=\"prettyprint\">?agency_id=145 </code></pre>"
+          },
+          {
+            "group": "Query string",
+            "type": "String",
+            "optional": true,
+            "field": "route_id",
+            "description": "<p>ID de la línea.</p> <pre class=\"prettyprint\">?route_id=39C </code></pre>"
+          },
+          {
+            "group": "Query string",
+            "type": "String",
+            "optional": true,
+            "field": "trip",
+            "description": "<p>ID del trip.</p> <pre class=\"prettyprint\">?trip=1013 </code></pre>"
+          }
+        ]
+      }
+    },
+    "examples": [
+      {
+        "title": "Ejemplo de uso:",
+        "content": "GET /colectivos/api/v1.0/service-alerts HTTP/1.1\nHost: sip1.verzi.com.ar\nCache-Control: no-cache",
+        "type": "json"
+      }
+    ],
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "GET 'http://sip1.verzi.com.ar/colectivos/api/v1.0/service-alerts?offset=0&limit=1'\nHTTP/1.1 200 Ok\n\n{\n      \"metadata\":{\n          \"resultset\":{\n              \"count\":1,\n              \"offset\":0,\n              \"limit\":1\n          }\n      },\n      \"results\":[\n          {\n              \"_alert\":{\n                  \"_active_period\":[\n\n                  ],\n                  \"_cause\":2,\n                  \"_description_text\":{\n                  \"_translation\":[\n                      {\n                          \"_language\":\"\",\n                          \"_text\":\"Todas las líneas de AMBA estarán pronto en la app. +info argentina.gob.ar/CuandoSUBO\",\n                          \"extensionObject\":null\n                      }\n                  ],\n                  \"extensionObject\":null\n                  },\n                  \"_effect\":8,\n                  \"_header_text\":{\n                  \"_translation\":[\n                      {\n                          \"_language\":\"\",\n                          \"_text\":\"Línea 174 pronto en la app\",\n                          \"extensionObject\":null\n                      }\n                  ],\n                  \"extensionObject\":null\n                  },\n                  \"_url\":{\n                  \"_translation\":[\n\n                  ],\n                  \"extensionObject\":null\n                  },\n                  \"extensionObject\":null,\n                  \"_cause_original_text\":\"OTHER_CAUSE\",\n                  \"_cause_translation_text\":\"Otra causa\",\n                  \"_effect_original_text\":\"UNKNOWN_EFFECT\",\n                  \"_effect_translation_text\":\"Efecto desconocido\"\n              },\n              \"_id\":\"25\",\n              \"_is_deleted\":false,\n              \"_trip_update\":null,\n              \"_vehicle\":null,\n              \"extensionObject\":null\n          }\n      ]\n  }",
+          "type": "json"
+        }
+      ]
+    },
+    "sampleRequest": [
+      {
+        "url": "http://sip1.verzi.com.ar/colectivos/api/v1.0/service-alerts"
+      }
+    ],
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "Error",
+            "description": "<p>Posible error.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Response (ejemplo):",
+          "content": "HTTP/1.1 500 Internal Server Error\n{\n    status: 500,\n    developerMessage: \"Required query parameter provider not specified (org.mule.module.apikit.exception.InvalidQueryParameterException).\",\n    userMessage: \"Servicio no disponible. Por favor, intente nuevamente más tarde. Muchas gracias.\",\n    errorCode: \"\",\n    moreInfo: \"\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "cronito/plugins/colectivos/src/Controller/ServiceAlertsController.php",
+    "groupTitle": "Colectivos"
+  }
+]

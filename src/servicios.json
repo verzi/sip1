@@ -1,0 +1,171 @@
+[
+    {
+        "name": "COLECTIVOS",
+        "description": "Información sobre colectivos",
+        "fontAwesomeIcon": "fas fa-bus-alt fa-fw fa-2x",
+        "tags": "colectivos, colectivo, bondi",
+        "environments": {
+            "local": {
+                "enabled": true,
+                "documentationUrl": "/api/docs/colectivos/index.html"
+            },
+            "development": {
+                "enabled": true,
+                "documentationUrl": "/api/docs/colectivos/index.html"
+            },
+            "testing": {
+                "enabled": true,
+                "documentationUrl": "/api/docs/colectivos/index.html"
+            },
+            "homologation": {
+                "enabled": true,
+                "documentationUrl": "/api/docs/colectivos/index.html"
+            },
+            "production": {
+                "enabled": true,
+                "documentationUrl": "/api/docs/colectivos/index.html"
+            }
+        }
+    },
+    {
+        "name": "SUBTES",
+        "description": "Información sobre subtes",
+        "fontAwesomeIcon": "fas fa-subway fa-fw fa-2x",
+        "tags": "subtes, subte, premetro, pre metro",
+        "environments": {
+            "local": {
+                "enabled": true,
+                "documentationUrl": "/api/docs/subtes/index.html"
+            },
+            "development": {
+                "enabled": true,
+                "documentationUrl": "/api/docs/subtes/index.html"
+            },
+            "testing": {
+                "enabled": true,
+                "documentationUrl": "/api/docs/subtes/index.html"
+            },
+            "homologation": {
+                "enabled": true,
+                "documentationUrl": "/api/docs/subtes/index.html"
+            },
+            "production": {
+                "enabled": true,
+                "documentationUrl": "/api/docs/subtes/index.html"
+            }
+        }
+    },
+    {
+        "name": "TRANSITO",
+        "description": "Información sobre cortes y eventos en la vía pública",
+        "fontAwesomeIcon": "fas fa-road fa-fw fa-2x",
+        "tags": "transito, cortes, eventos",
+        "environments": {
+            "local": {
+                "enabled": true,
+                "documentationUrl": "/api/docs/transito/index.html"
+            },
+            "development": {
+                "enabled": true,
+                "documentationUrl": "/api/docs/transito/index.html"
+            },
+            "testing": {
+                "enabled": true,
+                "documentationUrl": "/api/docs/transito/index.html"
+            },
+            "homologation": {
+                "enabled": true,
+                "documentationUrl": "/api/docs/transito/index.html"
+            },
+            "production": {
+                "enabled": true,
+                "documentationUrl": "/api/docs/transito/index.html"
+            }
+        }
+    },
+    {
+        "name": "MONOPATINES",
+        "description": "Información sobre monopatines de Glovo, Movo y Grin",
+        "fontAwesomeIcon": "far fa-compass fa-fw fa-2x",
+        "tags": "movo, glovo, grin, monopatines",
+        "environments": {
+            "local": {
+                "enabled": true,
+                "documentationUrl": "/api/docs/monopatines/index.html"
+            },
+            "development": {
+                "enabled": true,
+                "documentationUrl": "/api/docs/monopatines/index.html"
+            },
+            "testing": {
+                "enabled": true,
+                "documentationUrl": "/api/docs/monopatines/index.html"
+            },
+            "homologation": {
+                "enabled": true,
+                "documentationUrl": "/api/docs/monopatines/index.html"
+            },
+            "production": {
+                "enabled": true,
+                "documentationUrl": "/api/docs/monopatines/index.html"
+            }
+        }
+    },
+    {
+        "name": "ECOBICIS",
+        "description": "Información sobre Ecobicis",
+        "fontAwesomeIcon": "fas fa-bicycle fa-fw fa-2x",
+        "tags": "ecobicis, bicis, bicicletas",
+        "environments": {
+            "local": {
+                "enabled": true,
+                "documentationUrl": "/api/docs/ecobicis/index.html"
+            },
+            "development": {
+                "enabled": true,
+                "documentationUrl": "/api/docs/ecobicis/index.html"
+            },
+            "testing": {
+                "enabled": true,
+                "documentationUrl": "/api/docs/ecobicis/index.html"
+            },
+            "homologation": {
+                "enabled": true,
+                "documentationUrl": "/api/docs/ecobicis/index.html"
+            },
+            "production": {
+                "enabled": true,
+                "documentationUrl": "/api/docs/ecobicis/index.html"
+            }
+        }
+    },
+    {
+        "name": "GEOMETRY LIBRARY",
+        "description": "Servicio de cálculos geométricos",
+        "fontAwesomeIcon": "far fa-dizzy fa-fw fa-2x",
+        "tags": "distancias, punto, polyline, poligono, linea, distancia, calculo, geometria, maps, mapa",
+        "environments": {
+            "local": {
+                "enabled": true,
+                "documentationUrl": "/api/docs/geometry-library/index.html"
+            },
+            "development": {
+                "enabled": true,
+                "documentationUrl": "/api/docs/geometry-library/index.html"
+            },
+            "testing": {
+                "enabled": true,
+                "documentationUrl": "/api/docs/geometry-library/index.html"
+            },
+            "homologation": {
+                "enabled": true,
+                "documentationUrl": "/api/docs/geometry-library/index.html"
+            },
+            "production": {
+                "enabled": true,
+                "documentationUrl": "/api/docs/geometry-library/index.html"
+            }
+        }
+    }
+    
+]

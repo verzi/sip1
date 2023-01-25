@@ -1,0 +1,12 @@
+.media:first-child {
+    margin-top: 0;
+    padding-bottom: 1px;
+}
+
+.btn-primary {
+    background-color: #f9cf0f;
+}
+
+.text-primary {
+    color: #f9cf0f !important;
+}

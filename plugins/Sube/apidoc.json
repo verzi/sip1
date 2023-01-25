@@ -1,0 +1,20 @@
+{
+	"name": "Monopatines",
+	"version": "1.0.0",
+	"description": "Interfaz de consumo para la API de transporte de GCBA. Para documentación oficial y detallada ingresa a <a style=\"font-size: 24px;\" href=\"https://apitransporte.buenosaires.gob.ar/console/\" target=\"_blank\">https://apitransporte.buenosaires.gob.ar/console/</a>",
+	"title": "SIP1 - Servicios API transporte",
+	"url": "http://sip1.verzi.com.ar",
+	"header": {
+		"title": "",
+		"filename": "header.md"
+	},
+	"footer": {
+		"title": "",
+		"filename": "footer.md"
+	},
+	"order": [],
+	"template": {
+		"withCompare": true,
+		"withGenerator": true
+	}
+}

@@ -1,0 +1,12 @@
+@media print {
+  .social-share, 
+  .service-rating {
+    display: none;
+  }  
+	.main-footer,
+	body .main-footer {
+	  display: none;
+	}
+
+}
+

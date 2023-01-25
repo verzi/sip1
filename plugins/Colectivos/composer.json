@@ -1,0 +1,23 @@
+{
+    "name": "your-name-here/Colectivos",
+    "description": "Colectivos plugin for CakePHP",
+    "type": "cakephp-plugin",
+    "license": "MIT",
+    "require": {
+        "cakephp/cakephp": "^3.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7.14|^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Colectivos\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Colectivos\\Test\\": "tests/",
+            "Cake\\Test\\": "vendor/cakephp/cakephp/tests/"
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+	"name": "Geometry Library",
+	"version": "1.0.0",
+	"description": "Disponibilización como servicio de funcionalidades geométricas. Para documentación oficial y detallada ingresa a <a style=\"font-size: 24px;\" href=\"https://github.com/alexpechkarev/geometry-library\" target=\"_blank\">https://github.com/alexpechkarev/geometry-library</a>",
+	"title": "SIP1 - Servicios API transporte",
+	"url": "http://sip1.verzi.com.ar",
+	"header": {
+		"title": "",
+		"filename": "header.md"
+	},
+	"footer": {
+		"title": "",
+		"filename": "footer.md"
+	},
+	"order": [],
+	"template": {
+		"withCompare": true,
+		"withGenerator": true
+	}
+}

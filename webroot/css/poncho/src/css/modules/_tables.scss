@@ -1,0 +1,118 @@
+.table {
+
+  th {
+    line-height: 1.2;
+
+    a {
+      color: $text-color;
+      &:hover {text-decoration: underline; cursor: pointer; }
+      }
+    }
+
+  td {
+    small {
+      color: $gray;
+      font-weight: normal;
+    }
+
+    &.td-strong {
+      font-size: 1.1em;
+      font-weight: bold;
+    }
+
+    &.td-fixed {
+      width: 8%;
+    }
+
+    &.message.empty {
+      font-size: 1.4em;
+      color: $gray;
+      text-align: center;
+      padding: 2em 0;
+    }
+  }
+
+
+  &.table-align-middle {
+    td {
+      vertical-align: middle;
+      }
+  }
+
+  &.table-spaced {
+    td,
+    th {
+      padding: 14px 8px;
+    }
+  }
+
+  &.table-striped {
+
+  }
+  &.table-striped > tbody > tr:nth-of-type(odd) {
+      background-color: $gray-hover-light;
+  }
+
+  &.table-mobile td span.td-label {
+    display: none;
+  }
+
+  @media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px)  {
+
+    &.table-mobile {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+
+      thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+      }
+
+      tr {
+        border-bottom: 1px solid #ccc;
+      }
+
+      td {
+        border: none !important;
+        position: relative;
+        padding-left: 50%!important;
+      }
+
+      .not-thead td {
+        padding-left: 5%!important;
+      }
+
+
+      td span.td-label {
+        display: block;
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        font-weight: 500;
+      }
+
+      tr:nth-child(even) {
+        background: #fff
+      }
+      tr:nth-child(odd) {
+        background: #f0f0f0
+      }
+    }
+
+
+  }
+
+}
+
+
+
+.table-hover > tbody > tr {
+  &:hover {
+    background-color: $gray-hover;
+  }
+}
